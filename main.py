@@ -80,7 +80,8 @@ while(nome != 3):
             nome=3
         else:
             print("Ops, falha na autenticação.")
-            os.system("pause && "+apagar)
+            input("Pressione ENTER para continuar")
+            os.system(apagar)
             nome=1
     elif(nome == 2):
         os.system(apagar)
@@ -120,7 +121,8 @@ if(conectado):
                 for i in resultado:
                     print("{}. {}".format(int(i[0]),i[1]))
                 print("Você tem {} itens".format(len(resultado)))
-            os.system("pause && "+apagar)
+            input("Pressione ENTER para continuar")
+            os.system(apagar)
         if(menu == 2):
             resultado = select(conexao,"SELECT * FROM '"+usuario_consulta+"'")
             nota = str(input("Insira sua nota: "))
@@ -157,7 +159,8 @@ if(conectado):
                         print("Todos os itens foram removidos")
             else:
                 print("Seus dados estão a salvo")
-                os.system("pause &&"+apagar)
+                input("Pressione ENTER para continuar")
+                os.system(apagar)
         if(menu == 5):
             print("Até a próxima")
 
